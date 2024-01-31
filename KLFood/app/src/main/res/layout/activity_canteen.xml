@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".canteen_activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:id="@+id/activity_canteen_append_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:background="@drawable/food3"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#70BC1A23">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/design_one"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/design_two"/>
+
+                    <ImageView
+                        android:id="@+id/activity_canteen_back_image"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:src="@drawable/back_button"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="15dp"/>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/activity_canteen_text_canteen_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Satish Canteen"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-33dp"
+                android:layout_below="@+id/activity_canteen_append_layout1"
+                android:textColor="#BC1A23"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                />
+
+            <RelativeLayout
+                android:id="@+id/activity_canteen_append_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_canteen_text_canteen_name"
+                >
+
+                <TextView
+                    android:id="@+id/activity_canteen_text_canteen_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Near S-Block"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/activity_canteen_image_tags"
+                    android:layout_width="56dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/Tags"
+                    android:layout_alignParentTop="true"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_canteen_append_layout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_canteen_append_layout2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Veg Only"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:textSize="14sp"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_canteen_append_layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_canteen_append_layout3"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menu items"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentLeft="true"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add on"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="normal"
+                    android:textSize="15dp"
+                    />
+
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/activity_canteen_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_canteen_append_layout4"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                tools:listitem="@layout/item_recycler_view_activity_canteen"
+                />
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

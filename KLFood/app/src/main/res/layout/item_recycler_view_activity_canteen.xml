@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/line"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_recycler_view_activity_canteen_append_CardView1"
+        android:layout_width="57dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        app:cardCornerRadius="13dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/non_veg_beriyany"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/item_recycler_view_activity_canteen_append_Relative_layout1"
+        android:layout_width="82dp"
+        android:layout_height="31dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/background9"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/less"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/item_recycler_view_activity_canteen_append_CardView1"
+        android:layout_toStartOf="@+id/item_recycler_view_activity_canteen_append_Relative_layout1"
+        android:layout_marginLeft="7dp"
+        >
+
+        <TextView
+            android:id="@+id/item_recycler_view_activity_canteen_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chicken Fried Rice"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_recycler_view_activity_canteen_text1"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Net:"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="450gm"
+                    android:textColor="#BC1A23"
+                    android:textStyle="normal"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prize:"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="#BC1A23"
+                    android:textStyle="normal"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
